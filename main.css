@@ -1,0 +1,90 @@
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+}
+header{
+    font-size: 3em;
+    background: black;
+    flex-grow: .095;
+    /* border: 10px yellow ridge; */
+    padding: 5px;
+    color: white;
+}
+
+main{
+    background: black;
+    /* border: 10px yellow ridge; */
+     display: flex; 
+    flex-grow: 2.5;
+    color: white;
+}
+
+article{
+    order:2;
+    flex-grow: 3;
+    border: 15px yellow ridge; 
+}
+
+.article-header{
+font-size: 30px;
+}
+
+.history{
+    list-style-type: square;
+}
+
+aside{
+    flex-grow: 2;
+
+}
+
+.left{
+    background: white;
+    order:1;
+    flex-grow: .1;
+    color: black;
+    font-size: 40px;
+    
+}
+
+
+.explore{
+    list-style-type: none;
+    padding: 3px;
+    
+}
+
+
+.right{
+    background: white;
+    color: black;
+    order:3;
+}
+
+footer{
+    background: black;
+    flex-grow: .75;
+    color: white;
+}
+
+@media screen and (max-width: 1500px){
+    main{
+        flex-direction: column;
+
+    }
+
+    article{
+        order:0;
+    }
+
+    aside{
+
+        flex-grow: .05;
+    }
+}
+
+
